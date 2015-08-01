@@ -36,6 +36,7 @@
 		07F8405C1B6D7D69005B2510 /* MastercardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MastercardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F840611B6D7D69005B2510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07F840621B6D7D69005B2510 /* MastercardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastercardTests.swift; sourceTree = "<group>"; };
+		07F8406C1B6D7D89005B2510 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 		07F8403E1B6D7D69005B2510 = {
 			isa = PBXGroup;
 			children = (
+				07F8406C1B6D7D89005B2510 /* Bridge.h */,
 				07F840491B6D7D69005B2510 /* Mastercard */,
 				07F8405F1B6D7D69005B2510 /* MastercardTests */,
 				07F840481B6D7D69005B2510 /* Products */,
@@ -343,6 +345,7 @@
 				INFOPLIST_FILE = Mastercard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridge.h;
 			};
 			name = Debug;
 		};
@@ -353,6 +356,7 @@
 				INFOPLIST_FILE = Mastercard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridge.h;
 			};
 			name = Release;
 		};
