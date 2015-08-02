@@ -286,7 +286,9 @@
 -(void)buttonWasTapped:(UIButton *)button {
     
     //[self hideFromIndex:[bubbleButtons indexOfObject:button]];
-    button.frame = CGRectMake(button.frame.origin.x, button.frame.origin.y, button.frame.size.width * 1.2, button.frame.size.height * 1.2);
+    [UIView animateWithDuration:0.5 animations:^{
+        button.frame = CGRectMake(button.frame.origin.x, button.frame.origin.y, button.frame.size.width * 1.3, button.frame.size.height * 1.3);
+    }];
     
     if([self.delegate respondsToSelector:@selector(livBubbleMenu:tappedBubbleWithIndex:)]) {
         [self.delegate livBubbleMenu:self tappedBubbleWithIndex:button.tag];
