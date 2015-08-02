@@ -192,6 +192,80 @@
             </objects>
             <point key="canvasLocation" x="485" y="1658"/>
         </scene>
+        <!--Header Table Controller-->
+        <scene sceneID="zqi-kX-ybC">
+            <objects>
+                <viewController storyboardIdentifier="HeaderTableController" id="Jco-78-PS8" customClass="HeaderTableController" customModule="Mastercard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Pp-Fe-OL5"/>
+                        <viewControllerLayoutGuide type="bottom" id="slI-m5-qEu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="25d-w5-TPN">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NfR-lY-Nha">
+                                <rect key="frame" x="-4" y="0.0" width="408" height="400"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0F-FE-eau">
+                                <rect key="frame" x="-4" y="0.0" width="408" height="400"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8ib-n5-Yyb">
+                                    <rect key="frame" x="0.0" y="0.0" width="408" height="400"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewc-QQ-QZk">
+                                <rect key="frame" x="179" y="190" width="42" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESV-et-1iO">
+                                <rect key="frame" x="179" y="150" width="42" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="ESV-et-1iO" secondAttribute="centerY" constant="40" id="4Qr-iD-VVR"/>
+                            <constraint firstItem="x0F-FE-eau" firstAttribute="leading" secondItem="25d-w5-TPN" secondAttribute="leadingMargin" constant="-20" id="AkK-gx-b7q"/>
+                            <constraint firstAttribute="centerX" secondItem="Ewc-QQ-QZk" secondAttribute="centerX" id="FAE-9y-PXN"/>
+                            <constraint firstItem="x0F-FE-eau" firstAttribute="top" secondItem="25d-w5-TPN" secondAttribute="topMargin" id="L0t-Dv-NfV"/>
+                            <constraint firstAttribute="centerX" secondItem="ESV-et-1iO" secondAttribute="centerX" id="RsS-9d-tRo"/>
+                            <constraint firstItem="NfR-lY-Nha" firstAttribute="leading" secondItem="25d-w5-TPN" secondAttribute="leadingMargin" constant="-20" id="WHa-60-xX6"/>
+                            <constraint firstItem="Ewc-QQ-QZk" firstAttribute="top" secondItem="ESV-et-1iO" secondAttribute="bottom" constant="20" id="YX4-d9-UQ3"/>
+                            <constraint firstItem="NfR-lY-Nha" firstAttribute="top" secondItem="25d-w5-TPN" secondAttribute="topMargin" id="doK-ch-OGJ"/>
+                            <constraint firstItem="slI-m5-qEu" firstAttribute="top" secondItem="NfR-lY-Nha" secondAttribute="bottom" id="fey-Z6-ypF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x0F-FE-eau" secondAttribute="trailing" constant="-20" id="grN-i8-svn"/>
+                            <constraint firstItem="slI-m5-qEu" firstAttribute="top" secondItem="x0F-FE-eau" secondAttribute="bottom" id="nLk-Pd-xcy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NfR-lY-Nha" secondAttribute="trailing" constant="-20" id="vng-jG-5zu"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="400"/>
+                    <connections>
+                        <outlet property="iv_background" destination="NfR-lY-Nha" id="9cE-qY-3m4"/>
+                        <outlet property="lbl_subtitle" destination="Ewc-QQ-QZk" id="Mqv-WO-uQj"/>
+                        <outlet property="lbl_title" destination="ESV-et-1iO" id="Dnv-Kb-I3r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVI-qL-fiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="2324"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="g8g-ct-6vo">
+            <objects>
+                <pageViewController storyboardIdentifier="PVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="xS2-1z-BzJ" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTM-p8-kMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="2272"/>
+        </scene>
     </scenes>
     <resources>
         <image name="mc-chevron-right" width="33" height="33"/>
