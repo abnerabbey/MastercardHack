@@ -45,7 +45,7 @@ class FeaturedController: UIViewController,UITableViewDelegate,UITableViewDataSo
         pageViewController.setViewControllers(vcArray, direction: .Forward, animated: true, completion: nil)
         
         
-        pageViewController.view.frame = CGRect(x: 0, y: 0, width: 400, height: 300)
+        pageViewController.view.frame = CGRect(x: 0, y: 0, width: tb_featured.frame.width, height: 180)
         self.addChildViewController(pageViewController)
         
         tb_featured.tableHeaderView = pageViewController.view

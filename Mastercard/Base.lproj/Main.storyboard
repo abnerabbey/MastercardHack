@@ -231,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fnh-dT-uhq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="619" y="1030"/>
+            <point key="canvasLocation" x="619" y="1025"/>
         </scene>
         <!--Header Table Controller-->
         <scene sceneID="7MZ-lE-FXt">
@@ -242,34 +242,42 @@
                         <viewControllerLayoutGuide type="bottom" id="WWG-Rf-8ts"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XSd-lx-Cmr">
-                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bt8-je-ISe">
-                                <rect key="frame" x="-4" y="0.0" width="408" height="400"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bt8-je-ISe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="ngP-Fn-ihZ"/>
+                                    <constraint firstAttribute="height" constant="220" id="ykR-CJ-MjT"/>
+                                </constraints>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALd-8x-6JA">
-                                <rect key="frame" x="-4" y="0.0" width="408" height="400"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sk8-5b-I84">
-                                    <rect key="frame" x="0.0" y="0.0" width="408" height="400"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owe-Rr-TaN">
-                                <rect key="frame" x="179" y="190" width="42" height="20"/>
+                                <rect key="frame" x="186" y="80" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPs-LW-EuF">
-                                <rect key="frame" x="179" y="150" width="42" height="20"/>
+                                <rect key="frame" x="186" y="40" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <visualEffectView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALd-8x-6JA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sk8-5b-I84">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="D1H-bO-S2B"/>
+                                    <constraint firstAttribute="height" constant="220" id="xug-WX-a78"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ALd-8x-6JA" firstAttribute="top" secondItem="XSd-lx-Cmr" secondAttribute="topMargin" id="2E9-QV-cu7"/>
                             <constraint firstAttribute="centerX" secondItem="Owe-Rr-TaN" secondAttribute="centerX" id="4LH-yR-Ofh"/>
@@ -277,16 +285,28 @@
                             <constraint firstItem="WWG-Rf-8ts" firstAttribute="top" secondItem="Bt8-je-ISe" secondAttribute="bottom" id="8FM-ur-Rqw"/>
                             <constraint firstAttribute="centerX" secondItem="GPs-LW-EuF" secondAttribute="centerX" id="Dz3-Hr-fmv"/>
                             <constraint firstItem="Bt8-je-ISe" firstAttribute="top" secondItem="XSd-lx-Cmr" secondAttribute="topMargin" id="Gms-dB-mFF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ALd-8x-6JA" secondAttribute="trailing" constant="-20" id="KgE-et-l2b"/>
-                            <constraint firstItem="ALd-8x-6JA" firstAttribute="leading" secondItem="XSd-lx-Cmr" secondAttribute="leadingMargin" constant="-20" id="Ssy-TH-pJa"/>
+                            <constraint firstAttribute="centerX" secondItem="ALd-8x-6JA" secondAttribute="centerX" id="Lfa-Oh-rfb"/>
+                            <constraint firstAttribute="centerY" secondItem="Bt8-je-ISe" secondAttribute="centerY" constant="35" id="OnY-yR-5dP"/>
+                            <constraint firstAttribute="centerY" secondItem="ALd-8x-6JA" secondAttribute="centerY" constant="35" id="SZH-fr-8cN"/>
                             <constraint firstItem="Owe-Rr-TaN" firstAttribute="top" secondItem="GPs-LW-EuF" secondAttribute="bottom" constant="20" id="VAU-eR-2UN"/>
+                            <constraint firstAttribute="centerX" secondItem="Bt8-je-ISe" secondAttribute="centerX" id="VYj-Xw-tVX"/>
                             <constraint firstAttribute="centerY" secondItem="GPs-LW-EuF" secondAttribute="centerY" constant="40" id="ao8-Ng-3fz"/>
                             <constraint firstItem="WWG-Rf-8ts" firstAttribute="top" secondItem="ALd-8x-6JA" secondAttribute="bottom" id="fFk-j6-XeJ"/>
                             <constraint firstItem="Bt8-je-ISe" firstAttribute="leading" secondItem="XSd-lx-Cmr" secondAttribute="leadingMargin" constant="-20" id="qe8-Ia-7tQ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2E9-QV-cu7"/>
+                                <exclude reference="6oj-TM-HGG"/>
+                                <exclude reference="Gms-dB-mFF"/>
+                                <exclude reference="qe8-Ia-7tQ"/>
+                                <exclude reference="8FM-ur-Rqw"/>
+                                <exclude reference="fFk-j6-XeJ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="400" height="400"/>
+                    <size key="freeformSize" width="414" height="180"/>
                     <connections>
                         <outlet property="iv_background" destination="Bt8-je-ISe" id="tII-qk-KQE"/>
                         <outlet property="lbl_subtitle" destination="Owe-Rr-TaN" id="2Qa-IO-VQC"/>
