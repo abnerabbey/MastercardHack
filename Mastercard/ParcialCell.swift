@@ -33,4 +33,12 @@ class ParcialCell: UITableViewCell {
     @IBAction func more(sender: UIButton) {
     }
 
+    
+    func setCell(cover:String,title:String,subtitle:String){
+        
+        iv_cover.image = UIImage(named: cover)
+        lbl_title.text = title
+        lbl_subtitle.text = subtitle
+        
+    }
 }
