@@ -10,5 +10,6 @@
 #define Mastercard_Bridge_h
 
 #import "LIVBubbleMenu.h"
+#import "YTPlayerView.h"
 
 #endif

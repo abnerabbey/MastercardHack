@@ -21,6 +21,9 @@ class FeaturedController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var pageTittle:[String] = []
     var pageViewController: UIPageViewController!
     var pageSubtitle:[String] = []
+    var pageImage:[String] = []
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +34,14 @@ class FeaturedController: UIViewController,UITableViewDelegate,UITableViewDataSo
         cover = ["mc-cover-cumbia","mc-cover-mariachi","mc-cover-indie","mc-cover-pop","mc-cover-trova","mc-cover-rock"]
         pageTittle = ["a","b","c","d"]
         pageSubtitle = ["1","2","3","4"]
+        pageImage = ["mc-header-A","mc-header-B","mc-header-C","mc-header-D","mc-header-E","mc-header-F",]
+        
+        
         
         tb_featured.delegate = self
         tb_featured.dataSource = self
+        
+        
         
         
         
@@ -43,10 +51,20 @@ class FeaturedController: UIViewController,UITableViewDelegate,UITableViewDataSo
         pageViewController.delegate = self
         var vcArray = [initViewController]
         pageViewController.setViewControllers(vcArray, direction: .Forward, animated: true, completion: nil)
-        
-        
+        pageViewController.hidesBottomBarWhenPushed = true
         pageViewController.view.frame = CGRect(x: 0, y: 0, width: tb_featured.frame.width, height: 180)
         self.addChildViewController(pageViewController)
+        
+        var pager:UIPageControl = UIPageControl()
+        
+        for i in self.pageViewController.view.subviews {
+            if i.isKindOfClass(UIPageControl){
+                pager = i as! UIPageControl
+            }
+        }
+        
+        pager.hidden = true
+        
         
         tb_featured.tableHeaderView = pageViewController.view
         // Do any additional setup after loading the view.
@@ -94,7 +112,8 @@ class FeaturedController: UIViewController,UITableViewDelegate,UITableViewDataSo
         vc.index = index
         vc.tittle =  pageTittle[index]
         vc.subtitle = pageSubtitle[index]
-        vc.image = "mc-cover-mariachi"
+        vc.image = pageImage[index]
+
         return vc
     }
 

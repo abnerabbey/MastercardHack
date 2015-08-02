@@ -39,6 +39,9 @@
 		B8718FCD1B6E05BE007FB1BD /* FullImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FC91B6E05BE007FB1BD /* FullImageCell.swift */; };
 		B8718FCE1B6E05BE007FB1BD /* HeaderTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FCA1B6E05BE007FB1BD /* HeaderTableController.swift */; };
 		B8718FCF1B6E05BE007FB1BD /* ParcialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FCB1B6E05BE007FB1BD /* ParcialCell.swift */; };
+		B8718FD41B6E29B2007FB1BD /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8718FD31B6E29B2007FB1BD /* YTPlayerView.m */; };
+		B8718FD61B6E2A36007FB1BD /* BandProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FD51B6E2A36007FB1BD /* BandProfileController.swift */; };
+		B8718FD81B6E2D23007FB1BD /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = B8718FD71B6E2D23007FB1BD /* YTPlayerView-iframe-player.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +127,10 @@
 		B8718FC91B6E05BE007FB1BD /* FullImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageCell.swift; sourceTree = "<group>"; };
 		B8718FCA1B6E05BE007FB1BD /* HeaderTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableController.swift; sourceTree = "<group>"; };
 		B8718FCB1B6E05BE007FB1BD /* ParcialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParcialCell.swift; sourceTree = "<group>"; };
+		B8718FD21B6E29B2007FB1BD /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		B8718FD31B6E29B2007FB1BD /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		B8718FD51B6E2A36007FB1BD /* BandProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandProfileController.swift; sourceTree = "<group>"; };
+		B8718FD71B6E2D23007FB1BD /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,11 +172,12 @@
 		07F840491B6D7D69005B2510 /* Mastercard */ = {
 			isa = PBXGroup;
 			children = (
-				07F8406D1B6D9A0E005B2510 /* LIVBubbleMenu.h */,
-				07F8406E1B6D9A0E005B2510 /* LIVBubbleMenu.m */,
+				B8718FD11B6E299C007FB1BD /* Youtube */,
+				B8718FD01B6E297F007FB1BD /* Bubble */,
 				07F8404C1B6D7D69005B2510 /* AppDelegate.swift */,
 				07F8404E1B6D7D69005B2510 /* ViewController.swift */,
 				07F840501B6D7D69005B2510 /* Main.storyboard */,
+				B8718FD51B6E2A36007FB1BD /* BandProfileController.swift */,
 				07F8410E1B6DB357005B2510 /* FirstViewController.h */,
 				07F8410F1B6DB357005B2510 /* FirstViewController.m */,
 				B8718FC81B6E05BE007FB1BD /* FeaturedController.swift */,
@@ -295,6 +303,25 @@
 			path = WebCore;
 			sourceTree = "<group>";
 		};
+		B8718FD01B6E297F007FB1BD /* Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				07F8406D1B6D9A0E005B2510 /* LIVBubbleMenu.h */,
+				07F8406E1B6D9A0E005B2510 /* LIVBubbleMenu.m */,
+			);
+			name = Bubble;
+			sourceTree = "<group>";
+		};
+		B8718FD11B6E299C007FB1BD /* Youtube */ = {
+			isa = PBXGroup;
+			children = (
+				B8718FD71B6E2D23007FB1BD /* YTPlayerView-iframe-player.html */,
+				B8718FD21B6E29B2007FB1BD /* YTPlayerView.h */,
+				B8718FD31B6E29B2007FB1BD /* YTPlayerView.m */,
+			);
+			name = Youtube;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -379,6 +406,7 @@
 				07F840571B6D7D69005B2510 /* LaunchScreen.xib in Resources */,
 				07F840F61B6D9B48005B2510 /* LICENSE in Resources */,
 				07F840541B6D7D69005B2510 /* Images.xcassets in Resources */,
+				B8718FD81B6E2D23007FB1BD /* YTPlayerView-iframe-player.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +430,7 @@
 				07F841071B6D9B48005B2510 /* POPVector.mm in Sources */,
 				07F840F81B6D9B48005B2510 /* POPAnimation.mm in Sources */,
 				07F840FC1B6D9B48005B2510 /* POPAnimationTracer.mm in Sources */,
+				B8718FD41B6E29B2007FB1BD /* YTPlayerView.m in Sources */,
 				07F8406F1B6D9A0E005B2510 /* LIVBubbleMenu.m in Sources */,
 				07F841021B6D9B48005B2510 /* POPGeometry.mm in Sources */,
 				07F841081B6D9B48005B2510 /* TransformationMatrix.cpp in Sources */,
@@ -415,6 +444,7 @@
 				07F841051B6D9B48005B2510 /* POPPropertyAnimation.mm in Sources */,
 				B8718FCC1B6E05BE007FB1BD /* FeaturedController.swift in Sources */,
 				07F840FE1B6D9B48005B2510 /* POPBasicAnimation.mm in Sources */,
+				B8718FD61B6E2A36007FB1BD /* BandProfileController.swift in Sources */,
 				07F841031B6D9B48005B2510 /* POPLayerExtras.mm in Sources */,
 				07F8404D1B6D7D69005B2510 /* AppDelegate.swift in Sources */,
 				07F840FF1B6D9B48005B2510 /* POPCGUtils.mm in Sources */,

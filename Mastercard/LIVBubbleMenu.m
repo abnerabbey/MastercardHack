@@ -286,9 +286,23 @@
 -(void)buttonWasTapped:(UIButton *)button {
     
     //[self hideFromIndex:[bubbleButtons indexOfObject:button]];
-    [UIView animateWithDuration:0.5 animations:^{
-        button.frame = CGRectMake(button.frame.origin.x, button.frame.origin.y, button.frame.size.width * 1.3, button.frame.size.height * 1.3);
+    CGFloat width = button.bounds.size.width;
+    
+    [UIView animateWithDuration:0.2 animations:^{
+    
+    NSLog(@"%f", width);
+        
+    if (width == 80){
+             button.frame = CGRectMake(button.frame.origin.x, button.frame.origin.y, button.frame.size.width * 1.3, button.frame.size.height * 1.3);
+        }else if(width == 104){
+             button.frame = CGRectMake(button.frame.origin.x, button.frame.origin.y, button.frame.size.width * 1.3, button.frame.size.height * 1.3);
+        }else{
+            button.frame = CGRectMake(button.frame.origin.x, button.frame.origin.y, 80, 80);
+        }
+    
     }];
+    
+    
     
     if([self.delegate respondsToSelector:@selector(livBubbleMenu:tappedBubbleWithIndex:)]) {
         [self.delegate livBubbleMenu:self tappedBubbleWithIndex:button.tag];
