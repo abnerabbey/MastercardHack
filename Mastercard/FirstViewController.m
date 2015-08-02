@@ -57,7 +57,7 @@
 
 - (void)nextView
 {
-    FeaturedController *feedView = [[self storyboard] instantiateViewControllerWithIdentifier:@"FeaturedController"];
+    UINavigationController *feedView = [[self storyboard] instantiateViewControllerWithIdentifier:@"FeaturedController"];
     [self presentViewController:feedView animated:YES completion:nil];
 }
 

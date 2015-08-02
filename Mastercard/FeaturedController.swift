@@ -68,6 +68,8 @@ class FeaturedController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         tb_featured.tableHeaderView = pageViewController.view
         // Do any additional setup after loading the view.
+        
+        self.navigationController?.navigationBar.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,6 +99,10 @@ class FeaturedController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 80
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("showDetail", sender: self)
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
 

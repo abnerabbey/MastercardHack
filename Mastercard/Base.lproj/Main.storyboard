@@ -87,7 +87,7 @@
         <!--Featured Controller-->
         <scene sceneID="TQu-N6-ZLb">
             <objects>
-                <viewController storyboardIdentifier="FeaturedController" id="Ij1-PN-jHp" customClass="FeaturedController" customModule="Mastercard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ij1-PN-jHp" customClass="FeaturedController" customModule="Mastercard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3nU-AX-m71"/>
                         <viewControllerLayoutGuide type="bottom" id="o9t-xD-TIh"/>
@@ -96,7 +96,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DgK-On-PaW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DgK-On-PaW">
                                 <rect key="frame" x="-4" y="0.0" width="608" height="600"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParcialCell" rowHeight="105" id="bSB-LP-HTj" customClass="ParcialCell" customModule="Mastercard" customModuleProvider="target">
@@ -170,7 +170,7 @@
                                                     </view>
                                                     <blurEffect style="light"/>
                                                 </visualEffectView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-bW-7Iu">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-bW-7Iu">
                                                     <rect key="frame" x="8" y="34" width="46" height="22"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -225,13 +225,15 @@
                             <constraint firstAttribute="trailingMargin" secondItem="DgK-On-PaW" secondAttribute="trailing" constant="-20" id="zYF-YY-noA"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="NW6-EO-hXg"/>
                     <connections>
                         <outlet property="tb_featured" destination="DgK-On-PaW" id="ED6-Sp-b0E"/>
+                        <segue destination="yUD-1T-CUv" kind="show" identifier="showDetail" id="5Cz-Da-K5p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fnh-dT-uhq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="619" y="1025"/>
+            <point key="canvasLocation" x="1431" y="1025"/>
         </scene>
         <!--Band Profile Controller-->
         <scene sceneID="Sml-jb-eTN">
@@ -256,7 +258,7 @@
                                 <rect key="frame" x="-2" y="250" width="379" height="417"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTS-g9-RxC">
-                                        <rect key="frame" x="104" y="60" width="400" height="22.5"/>
+                                        <rect key="frame" x="104" y="60" width="400" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="400" id="NSV-Bb-otx"/>
                                         </constraints>
@@ -265,7 +267,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfx-5B-Qe1">
-                                        <rect key="frame" x="76" y="18" width="42.5" height="21"/>
+                                        <rect key="frame" x="76" y="18" width="43" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -358,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rgt-pR-LL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340.5" y="1024.5"/>
+            <point key="canvasLocation" x="2152.5" y="1024.5"/>
         </scene>
         <!--Header Table Controller-->
         <scene sceneID="7MZ-lE-FXt">
@@ -474,6 +476,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEv-AR-f3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="796" y="1646"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5a3-1D-cGa">
+            <objects>
+                <navigationController storyboardIdentifier="FeaturedController" automaticallyAdjustsScrollViewInsets="NO" id="J5a-ER-Auq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CBS-xZ-AX3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ij1-PN-jHp" kind="relationship" relationship="rootViewController" id="InZ-qX-2Pa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xx1-Hh-1ZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="1025"/>
         </scene>
     </scenes>
     <resources>
