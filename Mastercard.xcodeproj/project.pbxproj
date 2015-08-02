@@ -13,6 +13,9 @@
 		07F840541B6D7D69005B2510 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F840531B6D7D69005B2510 /* Images.xcassets */; };
 		07F840571B6D7D69005B2510 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F840551B6D7D69005B2510 /* LaunchScreen.xib */; };
 		07F840631B6D7D69005B2510 /* MastercardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F840621B6D7D69005B2510 /* MastercardTests.swift */; };
+		B8718FC11B6D9F9A007FB1BD /* FeaturedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FC01B6D9F9A007FB1BD /* FeaturedController.swift */; };
+		B8718FC31B6DAB71007FB1BD /* FullImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FC21B6DAB71007FB1BD /* FullImageCell.swift */; };
+		B8718FC51B6DAB81007FB1BD /* ParcialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FC41B6DAB81007FB1BD /* ParcialCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 		07F840611B6D7D69005B2510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07F840621B6D7D69005B2510 /* MastercardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastercardTests.swift; sourceTree = "<group>"; };
 		07F8406C1B6D7D89005B2510 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		B8718FC01B6D9F9A007FB1BD /* FeaturedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedController.swift; sourceTree = "<group>"; };
+		B8718FC21B6DAB71007FB1BD /* FullImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageCell.swift; sourceTree = "<group>"; };
+		B8718FC41B6DAB81007FB1BD /* ParcialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParcialCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +88,12 @@
 				07F8404C1B6D7D69005B2510 /* AppDelegate.swift */,
 				07F8404E1B6D7D69005B2510 /* ViewController.swift */,
 				07F840501B6D7D69005B2510 /* Main.storyboard */,
+				B8718FC01B6D9F9A007FB1BD /* FeaturedController.swift */,
 				07F840531B6D7D69005B2510 /* Images.xcassets */,
 				07F840551B6D7D69005B2510 /* LaunchScreen.xib */,
 				07F8404A1B6D7D69005B2510 /* Supporting Files */,
+				B8718FC21B6DAB71007FB1BD /* FullImageCell.swift */,
+				B8718FC41B6DAB81007FB1BD /* ParcialCell.swift */,
 			);
 			path = Mastercard;
 			sourceTree = "<group>";
@@ -214,6 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8718FC51B6DAB81007FB1BD /* ParcialCell.swift in Sources */,
+				B8718FC31B6DAB71007FB1BD /* FullImageCell.swift in Sources */,
+				B8718FC11B6D9F9A007FB1BD /* FeaturedController.swift in Sources */,
 				07F8404F1B6D7D69005B2510 /* ViewController.swift in Sources */,
 				07F8404D1B6D7D69005B2510 /* AppDelegate.swift in Sources */,
 			);
@@ -413,6 +425,7 @@
 				07F840681B6D7D69005B2510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07F840691B6D7D69005B2510 /* Build configuration list for PBXNativeTarget "MastercardTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +434,7 @@
 				07F8406B1B6D7D69005B2510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
