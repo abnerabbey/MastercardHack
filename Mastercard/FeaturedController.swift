@@ -22,8 +22,8 @@ class FeaturedController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var pageViewController: UIPageViewController!
     var pageSubtitle:[String] = []
     var pageImage:[String] = []
-    
-    
+    var bands:[BandProfile] = []
+    var index:Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +36,12 @@ class FeaturedController: UIViewController,UITableViewDelegate,UITableViewDataSo
         pageSubtitle = ["1","2","3","4"]
         pageImage = ["mc-header-A","mc-header-B","mc-header-C","mc-header-D","mc-header-E","mc-header-F",]
         
+        bands.append(BandProfile(name: "Guns and Roses", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", video: "8SbUC-UaAxE", picone: "A", pictwo: "A", picthree: "A", nameone: "Antonio De La Mora", nametwo: "Joaquin Alvarado", nameThree: "Roberto Perez"))
+        bands.append(BandProfile(name: "Guns and Roses", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", video: "8SbUC-UaAxE", picone: "A", pictwo: "A", picthree: "A", nameone: "Antonio De La Mora", nametwo: "Joaquin Alvarado", nameThree: "Roberto Perez"))
+        bands.append(BandProfile(name: "Guns and Roses", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", video: "8SbUC-UaAxE", picone: "A", pictwo: "A", picthree: "A", nameone: "Antonio De La Mora", nametwo: "Joaquin Alvarado", nameThree: "Roberto Perez"))
+        bands.append(BandProfile(name: "Guns and Roses", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", video: "8SbUC-UaAxE", picone: "A", pictwo: "A", picthree: "A", nameone: "Antonio De La Mora", nametwo: "Joaquin Alvarado", nameThree: "Roberto Perez"))
+        bands.append(BandProfile(name: "Guns and Roses", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", video: "8SbUC-UaAxE", picone: "A", pictwo: "A", picthree: "A", nameone: "Antonio De La Mora", nametwo: "Joaquin Alvarado", nameThree: "Roberto Perez"))
+        bands.append(BandProfile(name: "Guns and Roses", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", video: "8SbUC-UaAxE", picone: "A", pictwo: "A", picthree: "A", nameone: "Antonio De La Mora", nametwo: "Joaquin Alvarado", nameThree: "Roberto Perez"))
         
         
         tb_featured.delegate = self
@@ -101,9 +107,27 @@ class FeaturedController: UIViewController,UITableViewDelegate,UITableViewDataSo
         return 80
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        //var nView = self.storyboard?.instantiateViewControllerWithIdentifier("BandProfileController") as! BandProfileController
+        
+        //nView.prepareView(bands[indexPath.row].bandName, bandDescription: bands[indexPath.row].bandDescription, picOne: bands[indexPath.row].bandPicOne, picTwo: bands[indexPath.row].bandPicTwo, picThree: bands[indexPath.row].bandPicThree, nameOne: bands[indexPath.row].bandNameOne, nameTwo: bands[indexPath.row].bandNameTwo, nameThree: bands[indexPath.row].bandNameThree)
+        //self.performSegueWithIdentifier("showDetail", sender: self)
+        //self.navigationController?.pushViewController(nView, animated: true)
+        
+        index = indexPath.row
         self.performSegueWithIdentifier("showDetail", sender: self)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showDetail" {
+            //var nView = segue.destinationViewController as! BandProfileController
+            
+           // nView.prepareView("Artista", bandDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", picOne: "A", picTwo: "A", picThree: "A", nameOne: "Nombre", nameTwo: "Nombre", nameThree: "Nombre")
+            //self.performSegueWithIdentifier("showDetail", sender: self)
+        }
+    }
+    
     
 
     

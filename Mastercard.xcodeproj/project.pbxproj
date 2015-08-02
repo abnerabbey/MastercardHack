@@ -35,6 +35,7 @@
 		07F841081B6D9B48005B2510 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F840F21B6D9B48005B2510 /* TransformationMatrix.cpp */; };
 		07F841091B6D9B48005B2510 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 07F840F51B6D9B48005B2510 /* README.md */; };
 		07F841101B6DB357005B2510 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F8410F1B6DB357005B2510 /* FirstViewController.m */; };
+		B80EF1CF1B6E45E000E8E298 /* BandProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80EF1CE1B6E45E000E8E298 /* BandProfile.swift */; };
 		B8718FCC1B6E05BE007FB1BD /* FeaturedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FC81B6E05BE007FB1BD /* FeaturedController.swift */; };
 		B8718FCD1B6E05BE007FB1BD /* FullImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FC91B6E05BE007FB1BD /* FullImageCell.swift */; };
 		B8718FCE1B6E05BE007FB1BD /* HeaderTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FCA1B6E05BE007FB1BD /* HeaderTableController.swift */; };
@@ -123,6 +124,7 @@
 		07F840F51B6D9B48005B2510 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		07F8410E1B6DB357005B2510 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		07F8410F1B6DB357005B2510 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B80EF1CE1B6E45E000E8E298 /* BandProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandProfile.swift; sourceTree = "<group>"; };
 		B8718FC81B6E05BE007FB1BD /* FeaturedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedController.swift; sourceTree = "<group>"; };
 		B8718FC91B6E05BE007FB1BD /* FullImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageCell.swift; sourceTree = "<group>"; };
 		B8718FCA1B6E05BE007FB1BD /* HeaderTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableController.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				07F8410E1B6DB357005B2510 /* FirstViewController.h */,
 				07F8410F1B6DB357005B2510 /* FirstViewController.m */,
 				B8718FC81B6E05BE007FB1BD /* FeaturedController.swift */,
+				B80EF1CE1B6E45E000E8E298 /* BandProfile.swift */,
 				B8718FC91B6E05BE007FB1BD /* FullImageCell.swift */,
 				B8718FCA1B6E05BE007FB1BD /* HeaderTableController.swift */,
 				B8718FCB1B6E05BE007FB1BD /* ParcialCell.swift */,
@@ -444,6 +447,7 @@
 				07F841051B6D9B48005B2510 /* POPPropertyAnimation.mm in Sources */,
 				B8718FCC1B6E05BE007FB1BD /* FeaturedController.swift in Sources */,
 				07F840FE1B6D9B48005B2510 /* POPBasicAnimation.mm in Sources */,
+				B80EF1CF1B6E45E000E8E298 /* BandProfile.swift in Sources */,
 				B8718FD61B6E2A36007FB1BD /* BandProfileController.swift in Sources */,
 				07F841031B6D9B48005B2510 /* POPLayerExtras.mm in Sources */,
 				07F8404D1B6D7D69005B2510 /* AppDelegate.swift in Sources */,
