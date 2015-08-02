@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "Mastercard-Swift.h"
 
 @interface FirstViewController ()
 
@@ -51,6 +52,13 @@
 - (void)menuDone
 {
     [_bubbleMenu hide];
+    [self performSelector:@selector(nextView) withObject:nil afterDelay:2.0];
+}
+
+- (void)nextView
+{
+    FeaturedController *feedView = [[self storyboard] instantiateViewControllerWithIdentifier:@"FeaturedController"];
+    [self presentViewController:feedView animated:YES completion:nil];
 }
 
 
