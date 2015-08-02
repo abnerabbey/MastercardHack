@@ -35,6 +35,10 @@
 		07F841081B6D9B48005B2510 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F840F21B6D9B48005B2510 /* TransformationMatrix.cpp */; };
 		07F841091B6D9B48005B2510 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 07F840F51B6D9B48005B2510 /* README.md */; };
 		07F841101B6DB357005B2510 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F8410F1B6DB357005B2510 /* FirstViewController.m */; };
+		B8718FCC1B6E05BE007FB1BD /* FeaturedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FC81B6E05BE007FB1BD /* FeaturedController.swift */; };
+		B8718FCD1B6E05BE007FB1BD /* FullImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FC91B6E05BE007FB1BD /* FullImageCell.swift */; };
+		B8718FCE1B6E05BE007FB1BD /* HeaderTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FCA1B6E05BE007FB1BD /* HeaderTableController.swift */; };
+		B8718FCF1B6E05BE007FB1BD /* ParcialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8718FCB1B6E05BE007FB1BD /* ParcialCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +120,10 @@
 		07F840F51B6D9B48005B2510 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		07F8410E1B6DB357005B2510 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		07F8410F1B6DB357005B2510 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B8718FC81B6E05BE007FB1BD /* FeaturedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedController.swift; sourceTree = "<group>"; };
+		B8718FC91B6E05BE007FB1BD /* FullImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageCell.swift; sourceTree = "<group>"; };
+		B8718FCA1B6E05BE007FB1BD /* HeaderTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableController.swift; sourceTree = "<group>"; };
+		B8718FCB1B6E05BE007FB1BD /* ParcialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParcialCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +172,10 @@
 				07F840501B6D7D69005B2510 /* Main.storyboard */,
 				07F8410E1B6DB357005B2510 /* FirstViewController.h */,
 				07F8410F1B6DB357005B2510 /* FirstViewController.m */,
+				B8718FC81B6E05BE007FB1BD /* FeaturedController.swift */,
+				B8718FC91B6E05BE007FB1BD /* FullImageCell.swift */,
+				B8718FCA1B6E05BE007FB1BD /* HeaderTableController.swift */,
+				B8718FCB1B6E05BE007FB1BD /* ParcialCell.swift */,
 				07F840531B6D7D69005B2510 /* Images.xcassets */,
 				07F840551B6D7D69005B2510 /* LaunchScreen.xib */,
 				07F840BD1B6D9B2A005B2510 /* Frameworks */,
@@ -385,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F8404F1B6D7D69005B2510 /* ViewController.swift in Sources */,
+				B8718FCD1B6E05BE007FB1BD /* FullImageCell.swift in Sources */,
 				07F840FB1B6D9B48005B2510 /* POPAnimationRuntime.mm in Sources */,
 				07F841071B6D9B48005B2510 /* POPVector.mm in Sources */,
 				07F840F81B6D9B48005B2510 /* POPAnimation.mm in Sources */,
@@ -395,10 +408,12 @@
 				07F840FA1B6D9B48005B2510 /* POPAnimationExtras.mm in Sources */,
 				07F840F91B6D9B48005B2510 /* POPAnimationEvent.mm in Sources */,
 				07F840F71B6D9B48005B2510 /* POPAnimatableProperty.mm in Sources */,
+				B8718FCF1B6E05BE007FB1BD /* ParcialCell.swift in Sources */,
 				07F840FD1B6D9B48005B2510 /* POPAnimator.mm in Sources */,
 				07F841011B6D9B48005B2510 /* POPDecayAnimation.mm in Sources */,
 				07F841061B6D9B48005B2510 /* POPSpringAnimation.mm in Sources */,
 				07F841051B6D9B48005B2510 /* POPPropertyAnimation.mm in Sources */,
+				B8718FCC1B6E05BE007FB1BD /* FeaturedController.swift in Sources */,
 				07F840FE1B6D9B48005B2510 /* POPBasicAnimation.mm in Sources */,
 				07F841031B6D9B48005B2510 /* POPLayerExtras.mm in Sources */,
 				07F8404D1B6D7D69005B2510 /* AppDelegate.swift in Sources */,
@@ -407,6 +422,7 @@
 				07F841041B6D9B48005B2510 /* POPMath.mm in Sources */,
 				07F841091B6D9B48005B2510 /* README.md in Sources */,
 				07F841001B6D9B48005B2510 /* POPCustomAnimation.mm in Sources */,
+				B8718FCE1B6E05BE007FB1BD /* HeaderTableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
